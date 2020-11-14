@@ -1,0 +1,6 @@
+auto wire==>injecting dependency automatically
+3 ways
+--none
+--autowire byName==>keep the id by same name of that object
+--by type
+--constructor

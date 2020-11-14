@@ -1,0 +1,44 @@
+===Flight-info table===========
+create table flight_info(
+     flight_no int primary key auto_increment ,
+   souce varchar(30) not null,
+    destination varchar(30) not null,
+    arr_date date not null,
+   book_time time not null,
+    tot_seates int not null,
+    book_seat int not null,
+    amount float not null);
+
+desc flight_info;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| flight_no   | int         | NO   | PRI | NULL    | auto_increment |
+| souce       | varchar(30) | NO   |     | NULL    |                |
+| destination | varchar(30) | NO   |     | NULL    |                |
+| arr_date    | date        | NO   |     | NULL    |                |
+| book_time   | time        | NO   |     | NULL    |                |
+| tot_seates  | int         | NO   |     | NULL    |                |
+| book_seat   | int         | NO   |     | NULL    |                |
+| amount      | float       | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+
+Booking table============
+create table booking(
+book_id int primary key auto_increment,
+cust_name varchar(30 ) not null,
+cust_no varchar(12) not null,
+book_seat int not null,
+flight_no int,
+foreign key (flight_no) references  flight_info(flight_no));
+
+ desc booking;
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| book_id   | int         | NO   | PRI | NULL    | auto_increment |
+| cust_name | varchar(30) | NO   |     | NULL    |                |
+| cust_no   | varchar(12) | NO   |     | NULL    |                |
+| book_seat | int         | NO   |     | NULL    |                |
+| flight_no | int         | YES  | MUL | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+

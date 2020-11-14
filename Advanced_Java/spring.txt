@@ -1,0 +1,33 @@
+bean==>setter getter method
+DAO==>jdbc functionality in application
+ORM==>object relational mapping module
+Cotexr==>user interfcae fuctionality==>sending mail,validation of data,passing messages etc
+
+Spring web==dynamic web applications
+
+
+need to include pom file dependency
+new==other==spring==s cgf file==any name can be givens==next==beans checkbox checked==see all the versions==cfg file(4.3==context===4.3)==p
+==mvc==v 4.3==next===finish
+
+
+
+in cfg file
+--give the entry of the bean file==>package name.pojo_classs_name
+
+classPathXmlApplicationContext is subclass of the ApplicationContext class
+
+java control never go to the xml file
+
+getBean is used to fetched the object createdin cfg file in bean tag
+
+aop
+beans
+mvc
+p
+
+hibernate spring is prewritten java code
+
+id and ref name should be same because id is object nd we pass object as a ref to any constructor or methods where ever it needed
+
+dependency ingection is done at the time of object creation

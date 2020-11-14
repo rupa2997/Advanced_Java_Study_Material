@@ -1,0 +1,37 @@
+Title of the project-----
+Cdac Job Portal
+
+Problem Statement=====
+
+
+Abstract====
+Cdac Job portal is an portal dedicated to meet every aspects of
+the freshers ,experienced people who worked in it industory.who want to serach or want to switch the job for particular 
+position.It is the forum where all cdac passout employees regiter in cdac portal.
+and update whenever any vacancy for any particular position available.
+
+Proposed System================
+--In these portal all registerd users update there profile ,provide linked in ,facebook, twitter profile link
+and whenever any vancancy in their comany .upload in news feed section so any needy users who want to switch there job they 
+can directly contact with the particular users.
+--Search based on keywords such as user name,job profile
+--Dynamic content Updation
+-Automated email facilities
+
+Registration============
+The system must provide login access to the registered users
+• The system must provide a registration page to enable new users(cdac passout students) to be registered
+• If the Registration is successful, an email is to be sent to the user with a temporarily generated password.
+• When the user logs in for the first time after registration, he must be prompted to change the temporary password
+• The new password provided by the user must be a secure password (not a dictionary based password
+
+
+
+
+
+Software Requirements=============
+Operating System: Windows 2000,windows XP
+Programming Language:Hibernate,Spring
+Script:HTML,CSS,Java Script
+DataBase: Mysql8.0.13
+

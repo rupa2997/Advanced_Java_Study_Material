@@ -1,0 +1,208 @@
+1.What is Servlet
+--Servlet is a technology which is used to create a scalable and robust web application.
+--it is platform independent server-side component
+Servlet is an API that provides many interfaces and classes including documentation.
+Servlet is an interface that must be implemented for creating any Servlet.
+Servlet is a class that extends the capabilities of the servers and responds to the incoming requests. It can respond to any requests.
+Servlet is a web component that is deployed on the server to create a dynamic web page.
+
+
+--Servlet is a Java technology that helps to develop scalable and robust web applications. It is a platform-independent server-side component. Moreover, it is possible to write a Servlet using three methods: by implementing Servlet interface, by extending GenericServlet abstract class or by extending the HttpServlet abstract class. The Servlet interface is the super interface for both GenericServlet and HttpServlet. It has five abstract methods, and GenericServlet and HttpServlet inherit these methods.
+2.Difference between generic and Http servlet
+--generic servlet is protocol independent servlet.can be used with any protocol such as HTTP, SMTP, FTP, and, CGI
+--It is Avaible in javax.servlet.servlet.package
+--generic servlet is an abstarct class which extends object and implements Servlet, ServletConfig, and java.io..Serializable interfaces
+-generic sevlets should overide the service method,
+however service is already implemented in http servlet
+
+
+
+
+
+
+
+--Http servlet is platform dependent servlet.it is suitable for only http servlet
+--It is Avaible in javax.servlet.http.package
+--the direct subclass to GenericServle is httpServlet.
+--HttpServlets override doGet() to handle GET request and doPost() to handle POST  requests.
+--other HttpServlet Methods are also available
+
+A class that implements Servlet, ServletConfig and Serializable interface that provide the implementation of all the methods of these interfaces except the service method
+
+Protocol-independent
+
+Service method is abstract
+
+Immediate subclass of Servlet interface
+
+public abstract class extends java.lang.Object, and
+implements Servlet.
+
+class which extends the Generic Servlet class and implements Serializable interface that provides HTTP specific methods
+
+Protocol-dependent 
+
+Service method is non abstract
+
+Immediate subclass of Generic Servlet
+
+public abstract class extends and, GenereServlet
+implements
+
+java.io.Scrializable
+
+Defined by javax.servlet.http package
+
+ 01. What is JDBC?
+02. In which package JDBC API is given?
+03. What is JDBC Driver?
+04. How many types of JDBC Driver given in java?
+05. Explain the Types of JDBC Drivers?
+06. What are the steps to use JDBC API?
+07. What do you mean by loading driver class? How to do it?
+08. What is Connection?
+09. What are the requirements to create connection?
+10. Which class is responsible to create JDBC Connection?
+11. What is Statements?
+12. How many types of statements provided in jdbc?
+13. What is the difference between Statement and PreparedStatement?
+14. How to get Statement type object and PreparedStatement type object?
+15. Explain the ways to execute any query statement?
+16. What is ResultSet?
+17. What is traversing methods in ResultSet?
+18. What is getter methods …
+19. What is transaction?
+20. What is scrollable ResultSet? How to achieve it?
+21. Explain Statement v/s PreparedStatement v/s CallableStatment.
+22. Explain execute() v/s executeUpdate() v/s executeQuery()
+23. what is servlet
+24. How to create Servlet?
+25. What is web.xml file?
+26. What is container?
+27. Explain Servlet Life Cycle?
+28. Name methods to create request type specific Servlet?
+29. How to write text response using servlet?
+30. What is the difference between sendRedirect() and ReqeustDispatcher?
+31. What is the difference between forward() and include() method of RequestDispatcher?
+32. What is Session?
+33. What are the ways to track session in java?
+34. What is Cookie?
+35. What is HttpSession?
+36. Differenciate between Cookie and HttpSession?
+37. What are the Servlet Scopes? Explain them.
+38. What is Context Parameter and how to access them in Servlet?
+39. Explain HttpServletRequest and HttpServletResponse.
+40.forward and include method
+The forward() method is used to transfer the client request to another resource (HTML file, servlet, jsp etc). When this method is called, the control is transferred to the next resource called. On the other hand, the include() method is used to include the content of the calling file into the called file. After calling this method, the control remains with the calling resource, but the processed output is included into the called resource.
+41.HttpServlet request object
+42.difference betweeen get and post request
+43.hw many http methods are there and give names??
+44.why we need url
+45.Prepared statement
+46.what is session tracking
+47.how many input tags 
+48.how many ways in java for session
+url writing
+hidden files
+cookies
+HttpSession
+and idfference among them?
+49.what is scriplet in jsp
+50.how to fetch parameter in scriplet
+51.what we can do bt keeping the data in request object
+52.what is servlet context??,what is scope??
+53.servlet config object we get
+54.diff between sendRedirect and request dispather
+55.which method is used to remove attribute
+56.if jdbc code is written there in case of exception ==>
+57.when to use get and post request
+58. What is JSP?
+59. Explain JSP Life Cycle.
+60. What are the advantages of JSP over Servlet?
+61. How many jsp scripting elements are there?
+62. Name the scripting elements?
+63. Tell syntax of all scripting elements .
+64. Explain the uses of all scripting elements.
+65. Name jsp implicit objects and the type.
+66. Explain JSP Directive?
+67. What is MVC?
+68. What is Java Bean Class?
+69. What is JSP Components? Name the jsp components (elements).
+70. Name JSP Standard Actions?
+71. Tell Syntax of useBean action tag.
+72. What is the use of id attribute of useBean action tag?
+73. What is the use of class attribute of useBean tag?
+74. Say syntax and use of setProperty action tag.
+75. What is significance of providing * as value to the property attribute of the setProperty tag.
+76. Say syntax and use of getProperty action tag.
+77.servlet  lifecycle
+78.which object is passed when service is called--request and response
+79.scope objects-
+page
+session
+application-
+request
+80.how to get session object in servlet--getsession
+init parameter in written on web.xml
+--using servlet config we get init parameter value
+81.what is difference in request and sendRedirect
+82.what is jsp--advanced version of jsp
+83.jsp components--
+scriptlet,standard actions,expressions
+84.directives
+page
+include
+import
+85.what is error page
+86.how many implicit objects in jsp--9
+87.standard actions component
+88.what is usebean tag--used to create the bean object--and to take the data in it
+89.two things using request dispacther
+90.why we used taglib
+91.scripting elements--expressions,declrations
+92.scope of the servlet context
+93.diff between jsp and servlet
+94.singleton class
+95.can u make the constructor in servlet class
+ 57. Say syntax of JSP Directives.
+58. Name JSP Dierectives and there uses.
+59. Explain the attributes of include directive.
+60. Explain the attributes of taglib directive.
+61. Name the JSP scopes and explain them.
+62. Tell syntax of JSP EL.
+63. Name implicit objects in EL.
+64. How to print the following using EL
+	application.setAttribute("course","dac");
+66. How to show request parameter using EL.
+67. How to display java bean property value using EL.
+68. What are the ways to print the value of Map ( that is in any jsp scope) using EL?
+69. How to show any java array or collection value using EL.
+70. How to send request parameter using html anchor tag?
+71. Name the methods that are used to get the cookie name and cookie value from the cookie object.
+72. How to check the cookie is attached with the request or not?
+73. How to store the bean object created using useBean tag in any jsp scope?
+
+
+ JSP interview questions
+ 74. What is ORM?
+75. What is hibernate?
+76. Explain SessionFactory, Session, Transaction hibernate objects.
+77. What is hibernate cfg file?
+78. What is hibernate hbm file?
+79. Which query languages are supported in hibernate?
+80. How DB portability is achieved in hibernate?
+===============================
+81. Explain following Annotation used in hibernate?
+	@Entity
+ 	@Id
+	@Table
+	@Column
+82. Query interface is used for what?
+83. Explain syntax and convension for HQL?
+84.how to create singleton class
+85. Explain Criteria, ProjectionList, Projections, Restrictions in Hibernate?
+86. What is Native Query?
+88. What is Named Query?
+89. Explain inheritance stratigies in hibernate?
+90. Explain Hibernate Association Mapping?
+91. What is the difference between get() and load() method in hibernate?

@@ -1,0 +1,95 @@
+Using get method
+--not secure
+--limit data can be sent
+--cachable
+
+Stand alone applicatio
+--run on single machine
+-eg: notepad,eclipse,ms office
+
+-java-Server side technology
+
+Servlet life cycle:--
+init()==> when server is loaded init() method is called
+
+service()--request==>whenever request is generated service method is called
+ 	--req
+
+destroy()==>destroy method is called--to releasing the resouce
+
+file
+new other
+extebd
+server
+apache
+tomact--v9.0 server
+
+atttached webpage to workspace
+
+file
+new server
+next
+expand apache
+tomcat v8.0 server
+next
+browse location
+cc--prgra files apache tomacat 8.0.27
+select foledre
+finish
+
+for project creation
+--new 
+dynamica wepage
+else result--web--dynamic web project
+--next
+--project name given
+--next
+--donnt check anything--nexr
+
+java reasorces folder--use to cfeate src files
+--jpg--png--.txt--html--jsp--in(web content)file
+
+to create html file
+--new--web-html file--next--donnt give exyension--next--finish
+for runn
+right click--run--run on server
+
+servelet app
+src--new--class--give package name--name of the servelets extension .java--finish
+
+7Types of request
+when url is not there--404
+whwn method is not there--405
+=========================================
+11/09/2020
+HTTP protocol--stateless protocol
+for different request, response different objects created 
+
+Session tracking
+================
+1.cookies---simple txt file--created by the browser--given to the client and store in the client machines
+2.HttpSession
+3.hidden variables
+4.url rewriting 
+
+--HttpSession=======
+getSession gives true if objject is not create for particular time for client then object is created
+
+getSession gives false==if object previous created for particular client.if not created it will create new
+===========================================================15/09/2020
+
+we can create scope using session,page,request
+jsp:useBean
+==========>1st check whether object is created or not if not then it automatically cfeated object of the student and store in the id which is the key of the session
+
+jsp:setProperty
+===========
+name is id which represent in (useBean) id==>name nd id should be same because it efer same object of particular class to set the valuess
+param is request paramater
+property is where bean instance==>param value store in property==>type conversion done automatically
+
+
+jsp:getProperty
+============
+name==object name
+property=object of classes(instance data memebers of particulat class object)
